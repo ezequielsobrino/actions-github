@@ -2,7 +2,7 @@ name: CREATE BRANCH
 
 on:
   schedule:
-    - cron:  '*/1 * * * *'
+    - cron:  '0/5 * * * *'
 
 jobs:
   auto-create-branch:
