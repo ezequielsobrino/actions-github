@@ -3,8 +3,6 @@ name: CREATE BRANCH
 on:
   schedule:
     - cron:  '*/1 * * * *'
-  workflow_run:
-    branches: [develop]
 
 jobs:
   auto-create-branch:
