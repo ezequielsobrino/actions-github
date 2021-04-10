@@ -1,0 +1,17 @@
+name: CREATE BRANCH
+
+on:
+  schedule:
+    - cron:  '*/1 * * * *'
+
+jobs:
+  auto-create-branch:
+    name: CreateBranchAction
+    runs-on: ubuntu-latest
+    steps:
+      - name: create-branch-action
+        uses: peterjgrainger/action-create-branch@v2.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: 'develop'
