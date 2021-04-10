@@ -4,7 +4,7 @@ name: PULL REQUEST
 on:
   create:
     branches: 
-      - releases/*
+      - release/*
 
 jobs:
   auto-pull-request:
